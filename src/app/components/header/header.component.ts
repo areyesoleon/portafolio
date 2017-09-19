@@ -12,9 +12,11 @@ export class HeaderComponent implements OnInit {
   constructor(
     public _is:InformacionService,
     public router:Router
-  ) { }
+  ) {
+   }
 
   ngOnInit() {
+    
   }
   buscar_producto(termino:string){
     this.router.navigate(['buscar',termino]);

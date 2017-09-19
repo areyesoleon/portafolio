@@ -39,7 +39,7 @@ export class ProductosService {
 
   }
 
-  private filtrar_productos(termino: string) {
+  public filtrar_productos(termino: string) {
     this.productos_filtrado = [];
     termino = termino.toLowerCase(),
     this.productos.forEach(prod => {

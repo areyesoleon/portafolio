@@ -10,7 +10,7 @@ export class ProductoComponent implements OnInit {
   producto:any = undefined;
   cod:string = undefined;
   constructor(
-    private route:ActivatedRoute,
+    public route:ActivatedRoute,
     _ps:ProductosService
   ) {
     route.params.subscribe(parametros=>{

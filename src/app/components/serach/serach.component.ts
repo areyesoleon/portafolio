@@ -10,8 +10,8 @@ import { ProductosService } from "../../services/productos.service";
 export class SerachComponent implements OnInit {
   termino:string = undefined;
   constructor(
-    private route:ActivatedRoute,
-    private _ps:ProductosService
+    public route:ActivatedRoute,
+    public _ps:ProductosService
   ) {
     route.params.subscribe((parametros) => {
       this.termino = parametros['termino'];
